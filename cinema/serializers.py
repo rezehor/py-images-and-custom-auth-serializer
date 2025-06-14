@@ -118,7 +118,6 @@ class TicketSerializer(serializers.ModelSerializer):
             attrs["row"],
             attrs["seat"],
             attrs["movie_session"],
-            attrs["cinema_hall"],
         )
         return data
 
