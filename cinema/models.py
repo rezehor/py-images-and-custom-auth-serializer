@@ -44,6 +44,7 @@ def movie_image_path(movie: "Movie", filename: str) -> pathlib.Path:
     filename = f"{slugify(movie.title)}-{uuid.uuid4()}{ext}"
     return pathlib.Path("uploads/images/") / pathlib.Path(filename)
 
+
 class Movie(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
